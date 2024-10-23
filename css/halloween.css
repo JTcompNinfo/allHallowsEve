@@ -1,3 +1,18 @@
+/*fonts
+ font-family: "Londrina Sketch", sans-serif;
+ font-family: "Playwrite GB S", cursive;
+ font-family: "Kablammo", system-ui;
+ font-family: "Nosifer", sans-serif;
+*/
+@import url(https://fonts.googleapis.com/css2?family=Kablammo&family=Londrina+Sketch&family=Nosifer&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap);
+
+/* color palets
+D6881F - light orange 
+7C3710 - brown
+22333B - blueish grey
+1B1E23 - black
+71818D - slate grey
+*/
 * {
     box-sizing: border-box;
     /* Box Model Fix */
@@ -7,7 +22,7 @@
 }
 
 body {
-    background-image: linear-gradient(#1C0125, #1C0125aa);
+    background-image: linear-gradient(#D6881F, #7C3710);
     height: 100vh;
 }
 ul {
@@ -15,18 +30,20 @@ ul {
 }
 
 a {
-    color: #fff;
+    color: #b50e0e;
     text-decoration: none;
 }
 
 .logo {
     margin: 0;
     font-size: 1.45em;
-    color: #fff;
+    color: #ff0000;
+    font-family: "Nosifer", sans-serif;
 }
 
 .main-nav {
     margin-top: 5px;
+    font-family: "Londrina Sketch", sans-serif;
 }
 
 .logo a,
