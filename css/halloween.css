@@ -7,11 +7,13 @@
 @import url(https://fonts.googleapis.com/css2?family=Kablammo&family=Londrina+Sketch&family=Nosifer&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap);
 
 /* color palets
-D6881F - light orange 
-7C3710 - brown
-22333B - blueish grey
-1B1E23 - black
-71818D - slate grey
+FFFEF6 - white
+FFC425 - yellow
+FF9B18 - light orange
+9E5513 - light brown 
+653611 - dark brown
+1C0E07 - black
+b50e0e - crimson
 */
 * {
     box-sizing: border-box;
@@ -22,7 +24,7 @@ D6881F - light orange
 }
 
 body {
-    background-image: linear-gradient(#D6881F, #7C3710);
+    background-image: linear-gradient(#9E5513, #653611);
     height: 100vh;
 }
 ul {
@@ -60,7 +62,7 @@ a {
 }
 
 .main-nav a:hover {
-    color: #FF9505;
+    color: #FF9B18;
 }
 .logo a{
     color: #b50e0e;
@@ -68,8 +70,8 @@ a {
 .header {
     padding-top: .5em;
     padding-bottom: .5em;
-    border: 1px solid #FF9505;
-    background-color: #FF950588;
+    border: 1px solid #ee9117;
+    background-color: #9E551388;
     box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
     border-radius: 5px;
 }
@@ -97,6 +99,63 @@ a {
     text-align: center;
 }
 
+.one {
+    padding: 10%;
+    font-size: 1.8em;
+}
+
+.one h2,
+.one p{
+    font-family: "Kablammo", system-ui;
+    margin-bottom: 1.2em;
+}
+
+.two {
+    padding: 10%;
+    font-size: 1.4em;
+}
+
+.two h2,
+.two p{
+    font-family: "Londrina Sketch", sans-serif;
+    margin-bottom: 1.2em;
+}
+
+.four {
+    padding: 10%;
+    font-size: 1.2em;
+}
+
+.four h2,
+.four p{
+    font-family: "Playwrite GB S", cursive;
+    margin-bottom: 1.2em;
+}
+
+.five {
+    padding: 10%;
+    font-size: 1.2em;
+}
+
+.five h2,
+.five p{
+    font-family: "Nosifer", sans-serif;
+    margin-bottom: 1.2em;
+    color:#b50e0e;
+}
+
+.seven {
+    padding: 10%;
+    font-size: 1.2em;
+}
+
+.seven h2,
+.seven p{
+    font-family: "Kablammo", system-ui;
+    margin-bottom: 1.2em;
+    color: #FFFEF6;
+}
+
 /*========================================
     CSS GRID RULES
 =========================================*/
@@ -107,37 +166,45 @@ a {
 
 .one {
     min-height: 250px;
-    background-color: #3c596c;
+    background-color: #FF9B18;
 }
 
 .two {
     min-height: 250px;
-    background-color: #fbbf31;
+    background-color: #FFC425;
 }
 
 .three {
-    min-height: 250px;
-    background-color: #0e0d0a;
+    min-height: 450px;
+    background-image: url(../images/2151827499.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position-x: left;
+    background-position-y: bottom;
 }
 
 .four {
     min-height: 250px;
-    background-color:#7C3710;
+    background-color:#9E5513;
 }
 
 .five {
     min-height: 250px;
-    background-color: #3c596c;
+    background-color: #FFC425;
 }
 
 .six {
-    min-height: 250px;
-    background-color: #FF9505;
+    min-height: 450px;
+    background-image: url(../images/2151827618.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position-x: ;
+    background-position-y: bottom;
 }
 
 .seven {
     min-height: 250px;
-    background-color:#b50e0e;
+    background-color:#1C0E07;
 }
 
 /*-------- Add Heading inside a flexbox -------*/
@@ -220,6 +287,47 @@ img {
         justify-content: space-between;
     }
 
+    #hero {
+        min-height: 800px;
+    }
+
+    .hero h2 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .one {
+        grid-column: 1/4;
+    }
+
+    .two {
+        grid-column: 1/3;
+    }
+
+    .three {
+        grid-column: 3/4;
+    }
+
+    .four {
+        grid-column: 1/4;
+    }
+
+    .five {
+        grid-column: 1/4;
+    }
+
+    .six {
+        grid-column: 1/2;
+    }
+
+    .seven {
+        grid-column: 2/4;
+    }
+
 }
 /*-------- End Desktop Media Query --------*/
 
@@ -232,4 +340,13 @@ img {
     }
 
 }
-/*-------- Large Display Media Query --------*/
+/*-------- End Large Display Media Query --------*/
+
+footer {
+    margin-top: 0;
+    padding: 10%;
+    background-color: #FF9505;
+    color: #0e0d0a;
+    min-height: 300px;
+    font-family: "Playwrite GB S", cursive;
+}
