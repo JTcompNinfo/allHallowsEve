@@ -166,7 +166,34 @@ a {
 
 .one {
     min-height: 250px;
-    background-color: #FF9B18;
+    background-image: url(../images/john-mccann-bm15OYOm-Gc-unsplash.jpg);
+}
+
+.block_one {
+    display: flex;
+    flex-direction: column;
+    background-color:#3c596ccd ;
+    padding: 2%;
+    border-radius: 2em 2em 0 2em;
+    box-shadow: 0PX 0PX 14PX 0PX rgba(255,255,255,0.75);
+}
+
+.block_one img, .block_two img, .three img, .four img, .five img, .six img, .seven img{
+    width:15%;
+}
+.small {
+    width:5%;
+}
+
+.fltRight {
+    float: right;
+    margin: 0 0 15px 20px;
+        /*  T R   B    L*/
+}
+
+.fltLeft {
+    float: left;
+    margin: 0 15px 20px 0;
 }
 
 .two {
@@ -198,7 +225,7 @@ a {
     background-image: url(../images/2151827618.jpg);
     background-repeat: none;
     background-size: cover;
-    background-position-x: ;
+    background-position-x:left ;
     background-position-y: bottom;
 }
 
