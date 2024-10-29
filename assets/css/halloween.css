@@ -182,7 +182,9 @@ a {
     width:15%;
 }
 .small {
-    width:5%;
+    width:5%; 
+    margin-right: 0;
+    padding-right: 0;
 }
 
 .fltRight {
