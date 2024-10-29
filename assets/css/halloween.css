@@ -156,6 +156,14 @@ a {
     color: #FFFEF6;
 }
 
+.poem {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 /*========================================
     CSS GRID RULES
 =========================================*/
