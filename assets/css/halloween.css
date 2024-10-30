@@ -186,7 +186,7 @@ a {
     box-shadow: 0PX 0PX 14PX 0PX rgba(255,255,255,0.75);
 }
 
-.block_one img, .block_two img, .three img, .four img, .five img, .six img, .seven img{
+.resize{
     width:15%;
 }
 .small {
@@ -203,6 +203,11 @@ a {
 
 .fltLeft {
     float: left;
+    margin: 0 15px 20px 0;
+}
+
+.fltTop {
+    float: top;
     margin: 0 15px 20px 0;
 }
 
